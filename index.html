@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Heaven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Adjusted for better contrast */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Ensures text is easily readable against the background */
+        }
+        header {
+            background-color: #333;
+            color: #fff; /* Ensures text is easily readable against the background */
+            padding: 10px 0;
+            text-align: center;
+        }
+        header button {
+            background-color: #4CAF50;
+            border: none;
+            color: #fff; /* Ensures text is easily readable against the background */
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9; /* Adjusted for better contrast */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1} /* Adjusted for better contrast */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .product-section {
+            margin: 20px;
+            text-align: center;
+        }
+        .product-section img {
+            width: 200px;
+            height: 200px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff; /* Ensures text is easily readable against the background */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form {
+            margin: 20px;
+            text-align: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: #fff; /* Ensures text is easily readable against the background */
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chocolate Heaven</h1>
+        <button>Shop Now</button>
+        <div class="dropdown">
+            <button>Products</button>
+            <div class="dropdown-content">
+                <a href="#">Chocolate Bars</a>
+                <a href="#">Chocolate Candies</a>
+                <a href="#">Chocolate Truffles</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="product-section">
+        <h2>Our Delicious Chocolates</h2>
+        <img src="chocolate-bar.jpg" alt="Chocolate Bar">
+        <p>Our chocolate bars are crafted with the finest ingredients to ensure a rich and satisfying taste.</p>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Chocolate Heaven. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript can be added here for any interactive elements
+    </script>
+</body>
+</html>
